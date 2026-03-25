@@ -139,13 +139,17 @@ Before sending, confirm:
 ### Step 6: post and confirm
 After sending:
 - confirm the reply is visible in thread or timeline
+<<<<<<< HEAD
 - then confirm it appears on **Profile → Replies** before counting it as successful
 - only treat the reply as complete once it is visible there
+=======
+>>>>>>> cb36be4 (Add Twitter X daily engagement SOP)
 - move on
 - do not revisit the same post later
 
 ---
 
+<<<<<<< HEAD
 ## CDP / Browser Automation Rules
 
 This SOP is executed through **CDP/browser automation**, not manual clicking.
@@ -160,6 +164,8 @@ Additional requirements:
 - final publish verification must be done on **Profile → Replies**
 - if account state, timeline state, or modal state is ambiguous, stop the batch
 
+=======
+>>>>>>> cb36be4 (Add Twitter X daily engagement SOP)
 ## UI Safety Rules
 
 ### If the browser gets messy
@@ -257,8 +263,11 @@ These rules were validated during active operation:
 - ads must be skipped automatically
 - shorter replies feel much better than polished ones
 - low-signal threads are not worth touching
+<<<<<<< HEAD
 - timeline confirmation alone is not reliable final proof
 - replies should only be counted after appearing on **Profile → Replies**
+=======
+>>>>>>> cb36be4 (Add Twitter X daily engagement SOP)
 - stopping early is better than posting junk
 
 ---
