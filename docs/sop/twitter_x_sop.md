@@ -139,10 +139,26 @@ Before sending, confirm:
 ### Step 6: post and confirm
 After sending:
 - confirm the reply is visible in thread or timeline
+- then confirm it appears on **Profile → Replies** before counting it as successful
+- only treat the reply as complete once it is visible there
 - move on
 - do not revisit the same post later
 
 ---
+
+## CDP / Browser Automation Rules
+
+This SOP is executed through **CDP/browser automation**, not manual clicking.
+
+Additional requirements:
+- verify the correct tab/account before starting
+- never click blind when refs/UI state look stale
+- confirm the composer is attached to the target post before typing
+- if the page drifts, reset to Home before continuing
+- after each send, confirm the reply actually landed on the intended post
+- do not count timeline-only confirmation as final proof of publish
+- final publish verification must be done on **Profile → Replies**
+- if account state, timeline state, or modal state is ambiguous, stop the batch
 
 ## UI Safety Rules
 
@@ -241,6 +257,8 @@ These rules were validated during active operation:
 - ads must be skipped automatically
 - shorter replies feel much better than polished ones
 - low-signal threads are not worth touching
+- timeline confirmation alone is not reliable final proof
+- replies should only be counted after appearing on **Profile → Replies**
 - stopping early is better than posting junk
 
 ---
