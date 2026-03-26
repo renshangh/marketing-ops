@@ -1,0 +1,66 @@
+name: Dispatch Task
+description: Create a GitHub-first dispatch ticket with explicit QA routing
+title: "[Dispatch] "
+labels: []
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: What outcome should this work produce?
+      placeholder: Describe the goal in one clear sentence.
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context / Inputs
+      description: What background, links, or artifacts should the specialist consume?
+      placeholder: Provide repo paths, docs, or relevant threads.
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: Deliverables / Outputs
+      description: Exactly what must the specialist produce or change?
+      placeholder: List files, comments, data, or artifacts to deliver.
+      value: ""
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance Criteria
+      description: How will Aether evaluate completion?
+      placeholder: Define measurable success criteria.
+      value: ""
+    validations:
+      required: true
+
+  - type: dropdown
+    id: qa_required
+    attributes:
+      label: QA required?
+      description: Does this issue need Sentinel/QA before final review?
+      options:
+        - "no"
+        - "yes"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: qa_owner
+    attributes:
+      label: QA owner
+      description: Who should own QA if QA is required?
+      options:
+        - "none"
+        - "agent:sentinel"
+    validations:
+      required: true
