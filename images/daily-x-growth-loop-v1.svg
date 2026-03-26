@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900">
+  <defs>
+    <style>
+      .bg { fill: #0d0f12; }
+      .grid { stroke: #1c2128; stroke-width: 1; }
+      .title { fill: #ffffff; font-family: sans-serif; font-weight: 800; font-size: 88px; text-anchor: middle; letter-spacing: -2px; }
+      .card-rect { fill: #161b22; stroke: #00f2ff; stroke-width: 3; rx: 20; }
+      .card-num { fill: #00f2ff; font-family: sans-serif; font-weight: 700; font-size: 26px; }
+      .card-content { fill: #f0f6fc; font-family: sans-serif; font-weight: 600; font-size: 36px; }
+      .connector { stroke: #00f2ff; stroke-width: 4; fill: none; stroke-dasharray: 10 10; opacity: 0.6; }
+      .footer { fill: #8b949e; font-family: sans-serif; font-weight: 400; font-size: 32px; text-anchor: middle; letter-spacing: 0.5px; }
+      .glow { filter: drop-shadow(0 0 10px rgba(0, 242, 255, 0.3)); }
+      .accent-dot { fill: #00f2ff; }
+    </style>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" class="grid"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#00f2ff" />
+    </marker>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="1600" height="900" class="bg" />
+  <rect width="1600" height="900" fill="url(#grid)" />
+
+  <!-- Decorative Accents -->
+  <circle cx="80" cy="80" r="4" class="accent-dot" />
+  <circle cx="1520" cy="80" r="4" class="accent-dot" />
+  <circle cx="80" cy="820" r="4" class="accent-dot" />
+  <circle cx="1520" cy="820" r="4" class="accent-dot" />
+
+  <!-- Header Section -->
+  <text x="800" y="180" class="title">DAILY X GROWTH LOOP</text>
+
+  <!-- Workflow Section -->
+  <g class="glow">
+    <!-- Card 1 -->
+    <g transform="translate(85, 330)">
+      <rect width="325" height="240" class="card-rect" />
+      <text x="35" y="60" class="card-num">01</text>
+      <text x="35" y="130" class="card-content">Scan top 10</text>
+      <text x="35" y="180" class="card-content">posts</text>
+    </g>
+
+    <path d="M 410 450 L 460 450" class="connector" marker-end="url(#arrow)" />
+
+    <!-- Card 2 -->
+    <g transform="translate(460, 330)">
+      <rect width="325" height="240" class="card-rect" />
+      <text x="35" y="60" class="card-num">02</text>
+      <text x="35" y="130" class="card-content">Reply where</text>
+      <text x="35" y="180" class="card-content">relevant</text>
+    </g>
+
+    <path d="M 785 450 L 835 450" class="connector" marker-end="url(#arrow)" />
+
+    <!-- Card 3 -->
+    <g transform="translate(835, 330)">
+      <rect width="325" height="240" class="card-rect" />
+      <text x="35" y="60" class="card-num">03</text>
+      <text x="35" y="130" class="card-content">Publish 1</text>
+      <text x="35" y="180" class="card-content">original post</text>
+    </g>
+
+    <path d="M 1160 450 L 1210 450" class="connector" marker-end="url(#arrow)" />
+
+    <!-- Card 4 -->
+    <g transform="translate(1210, 330)">
+      <rect width="325" height="240" class="card-rect" />
+      <text x="35" y="60" class="card-num">04</text>
+      <text x="35" y="130" class="card-content">Capture what</text>
+      <text x="35" y="180" class="card-content">got attention</text>
+    </g>
+  </g>
+
+  <!-- Footer Section -->
+  <line x1="600" y1="720" x2="1000" y2="720" stroke="#1c2128" stroke-width="2" />
+  <text x="800" y="780" class="footer">Speed compounds when the loop is daily.</text>
+</svg>
