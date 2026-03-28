@@ -307,6 +307,7 @@ Include:
 
 ---
 
+<<<<<<< HEAD
 ## 8. From lead capture to pipeline-tracking patters
 
 ### Objective
@@ -458,6 +459,8 @@ Include:
 - 1 version aimed at marketplace operators
 - short rationale on why buying packaged skills beats open-source downloads
 
+=======
+>>>>>>> 7c5e579 (Seed x-post ideas backlog for social pull workflow)
 ## Notes for Social when pulling item 1
 - Pull the top item only.
 - Open a GitHub drafting issue for that item before developing it further.
