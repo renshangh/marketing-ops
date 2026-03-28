@@ -35,6 +35,9 @@ This prevents:
 - `x-content-queue.md`
 - `memory/x-posting-state.json`
 
+### Idea Backlog Location
+- `x-post-sop/x-post-ideas.md`
+
 ### Purpose
 This lane runs the live daily posting loop.
 Only approved content belongs here.
@@ -54,6 +57,17 @@ Daily posting should stay simple:
 ---
 
 ## Lane B — Drafting Lane
+
+## Social Pull Workflow
+1. Social pulls the **top item only** from `x-post-sop/x-post-ideas.md`.
+2. Social opens a GitHub issue for that idea as the active draft record.
+3. Social removes that idea from `x-post-sop/x-post-ideas.md` once the draft issue is created.
+4. Social develops the draft packet in GitHub and hands it to Mark for review.
+5. Mark decides:
+   - rework required -> send back through the GitHub issue
+   - approved -> move the result into `x-content-queue.md` for production
+6. Social is notified when work is approved and then pulls the next top item.
+
 ### Source of Truth
 - GitHub issues
 - draft packets
@@ -130,6 +144,9 @@ The live posting loop should remain operationally lightweight.
 ### Daily source of truth
 - `x-content-queue.md`
 - `memory/x-posting-state.json`
+
+### Idea Backlog Location
+- `x-post-sop/x-post-ideas.md`
 
 ### Daily rule
 - Do not stop the posting loop just because GitHub drafting is active.
