@@ -307,6 +307,157 @@ Include:
 
 ---
 
+## 8. From lead capture to pipeline-tracking patters
+
+### Objective
+Describe how OpenClaw not only captures inbound but also keeps the pipeline visible so every follow-up is tracked, timestamped, and assigned.
+
+### Target audience
+- growth operators
+- revenue teams
+- PMs overseeing multi-channel funnels
+- founders measuring pipeline hygiene
+
+### Core angle
+Most teams struggle less with capturing attention and more with letting a lead slip between follow-up swimlanes. OpenClaw keeps the entire chain, so you always know where any person is in the journey.
+
+### OpenClaw-specific example
+Outline a workflow where:
+- a website form, Discord DM, and LinkedIn message all touch the same named contact
+- OpenClaw deduplicates context and updates a shared lead card
+- Each follow-up entry notes who did what, when, and what’s next
+- The system automatically nudges the right person if nothing happens within an SLA window
+
+### Useful details to include
+- a quick snapshot showing a lead card with timestamps
+- mention of automated reminders and SLA tracking
+- why this beats chasing fragmented notes in Slack/Google Docs
+
+### Desired takeaway
+OpenClaw makes pipeline hygiene a built-in feature, not a spreadsheet chore.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 short highlight version
+- 1 more detail-forward version showing a pipeline view
+- short rationale
+
+---
+
+## 9. Cross-channel launch sync in under 10 minutes
+
+### Objective
+Pitch OpenClaw as the fast switchboard that keeps launches synchronized across Discord, email, X, and Telegram.
+
+### Target audience
+- product marketers
+- ops leaders running launches
+- remote teams focused on multi-channel coordination
+
+### Core angle
+A launch often stalls because channels race ahead of each other. OpenClaw turns launch posts/reactions into a single narrative and makes sure every channel knows the current talking points.
+
+### OpenClaw-specific example
+Describe how OpenClaw:
+- monitors launch-related posts/tags in each channel
+- summarizes the dominant message for the day
+- drafts quick replies or reposts that match the approved launch tone
+- updates the launch board with what’s been executed and what’s next
+
+### Useful details to include
+- mention of a “launch board” that logs what’s live by channel
+- highlight the difference between repeated manual posting and a coordinated orchestration
+- share a 10-minute checklist unlock for busy teams
+
+### Desired takeaway
+OpenClaw makes multi-channel launch coordination faster and less brittle.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version aimed at PMs
+- 1 more storytelling version from the launch crew perspective
+- short rationale
+
+---
+
+## 10. Feedback loops that learn what “good” means
+
+### Objective
+Show how OpenClaw lets marketing learn what’s working by logging responses, reactions, and follow-up statuses.
+
+### Target audience
+- marketing analysts
+- GTM ops leaders
+- ops-minded founders
+
+### Core angle
+A campaign is only as strong as the loop that records wins and failures. OpenClaw captures performance data without manual tagging, so your next reply already knows what resonated last week.
+
+### OpenClaw-specific example
+Explain a cycle in which:
+- replies that drive replies get flagged with a “signal score” tag
+- the system highlights the top-performing hooks
+- future drafts can pull those signal scores as a prompt for tone/timing
+
+### Useful details to include
+- how to label and surface high signal vs low signal replies automatically
+- integration with the launch board or growth loop to propagate lessons
+- why letting analytics drive actual drafts is powerful
+
+### Desired takeaway
+OpenClaw turns reactive editing into a proactive feedback loop.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 version focused on analytics leaders
+- 1 more experimental version inviting the audience to surface better signals
+- short rationale
+
+---
+
+## 11. Skill packaging marketplace that keeps context and guardrails
+
+### Objective
+Show how a marketplace of reusable OpenClaw skills can boost operators by packaging provenance, guards, and testing so purchasing feels like shipping instead of starting from scratch.
+
+### Target audience
+- automation builders
+- platform ops leads
+- revenue/growth ops
+- founders scanning marketplaces for repeatable GTM assets
+
+### Core angle
+Marketplaces usually sell promises. OpenClaw can sell working skills with the metadata that operators actually need: logs, tests, inputs, and guardrails so adoption feels safe.
+
+### OpenClaw-specific example
+Paint the packaging process:
+- a creator exports a skill with annotated inputs, output examples, and run logs
+- a buyer sees the `source:`, `intent:`, and `guardrail:` tags plus a test script
+- the marketplace automatically runs a smoke test and surfaces the result
+- the purchase pushes the skill into the buyer’s queue with the original context preserved
+
+### Useful details to include
+- mention of metadata (tags, logs, tests)
+- describe how guardrails keep buyers confident
+- highlight the contrast between “bare repo” vs. packaged skill
+
+### Desired takeaway
+A marketplace sells trust, not just code.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version focused on trust signals
+- 1 version aimed at marketplace operators
+- short rationale on why buying packaged skills beats open-source downloads
+
 ## Notes for Social when pulling item 1
 - Pull the top item only.
 - Open a GitHub drafting issue for that item before developing it further.
