@@ -88,10 +88,51 @@ This keeps the starting wedge simpler and more learnable.
 
 ---
 
+## Mobile Pairing Companion Note
+When thinking about OpenClaw on mobile, the right model is **not** “fully install OpenClaw on the phone as the primary runtime.”
+
+The better and more accurate structure is:
+- **host machine / gateway** runs the main OpenClaw runtime
+- **mobile device** acts as a **pairing companion** or paired node
+- the phone provides mobile interaction, approvals, and device-side capabilities
+
+### Why this matters
+This matters because it shapes product design correctly.
+
+The phone should be treated as:
+- a companion interface
+- a paired node
+- an approval and notification surface
+- a mobile input device for things like camera, voice, and location
+
+Rather than as:
+- the full unrestricted system host
+- the sole runtime for the whole OpenClaw stack
+
+### Why we should describe it this way
+Using the “pairing companion” model is more accurate because OpenClaw’s official docs and CLI already frame mobile support around companion apps, pairing flows, and node/device capabilities.
+
+That is a better mental model than saying “install OpenClaw fully on iPhone or Android.”
+
+### Official OpenClaw sources
+Relevant official documentation:
+- iOS App: <https://docs.openclaw.ai/platforms/ios>
+- Android App: <https://docs.openclaw.ai/platforms/android>
+- Companion apps directory: <https://docs.openclaw.ai/start/docs-directory#companion-apps>
+- Android device + personal data commands: <https://docs.openclaw.ai/nodes/index#android-device-+-personal-data-commands>
+
+### Practical implication
+For our strategic thinking, mobile should be treated as:
+- **paired companion device first**
+- **full local host second, if ever**
+
+That framing is cleaner, more realistic, and better aligned with the OpenClaw platform design.
+
 ## Final Take
 For now, the right move is to stay disciplined:
 - keep the focus on the candidate side
 - treat recruiter-side software as a later expansion
 - use the candidate workflow to develop the strongest product abstractions first
+- treat mobile support as a **pairing companion** model, not a full primary local install model
 
 That is the clearest and most realistic Phase One path.
