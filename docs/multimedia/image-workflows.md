@@ -1,24 +1,66 @@
-# Image Workflows
+# Image Workflow Template
+
+## Purpose
+Create a repeatable image workflow for OpenClaw social graphics.
 
 ## Goal
-Turn post ideas into reusable social graphics.
+Turn a post idea into a visual that is readable, brand-safe, and easy to generate.
 
-## Standard flow
-1. choose graphic type
-2. define text overlay needs
-3. write generation prompt
-4. generate image
-5. refine composition
-6. save final asset
+## Inputs
+- post angle
+- graphic type
+- audience
+- key text
+- layout preference
+- accent color
+- source reference if any
 
-## Best uses
-- quote cards
-- workflow cards
-- proof cards
-- before/after cards
+## Workflow
+1. choose the graphic type
+2. define the message
+3. choose the layout
+4. set the size and orientation
+5. write the image prompt
+6. generate the image
+7. review composition and readability
+8. refine if needed
+9. save the final asset
 
-## Rules
+## Graphic types
+- quote card
+- workflow card
+- proof card
+- before/after card
+
+## Layout rules
+- leave space for overlay text
 - keep the background simple
-- leave room for text overlays
-- favor mobile readability
-- use one idea per image
+- use one visual idea per image
+- make the focal point obvious
+- keep mobile readability first
+
+## Prompt rules
+- describe the scene clearly
+- mention lighting, palette, and mood
+- keep clutter low
+- avoid unnecessary text inside the generated image
+- include output size or aspect ratio when useful
+
+## Review rules
+- check headline space
+- check contrast
+- check crop safety
+- check if the image matches the post goal
+- check if the image can be read on mobile
+
+## Output
+The final output should include:
+- image brief
+- prompt text
+- target size
+- layout notes
+- review notes
+- final asset location
+
+## Notes
+If a design needs more complexity, split it into a carousel or a separate proof graphic.
