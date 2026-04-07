@@ -22,10 +22,11 @@ Turn a post idea into a video plan that is ready for scripting, editing, and rev
 4. map the first 5 to 15 seconds
 5. draft the beat structure
 6. define on-screen captions
-7. review the frame pacing
-8. produce or edit the clip
-9. extract review frames if needed
-10. finalize the export
+7. keep the final clip within the standard duration
+8. review the frame pacing
+9. produce or edit the clip
+10. extract review frames if needed
+11. finalize the export
 
 ## Hook rules
 - start with the problem, not the intro
@@ -53,6 +54,7 @@ Use a simple beat structure:
 - check for readability
 - check for unnecessary silence
 - check for weak visual framing
+- confirm the clip lands in the 10 to 15 second standard window, with 12 seconds as the default
 
 ## Output
 The final output should include:
@@ -69,3 +71,8 @@ If the video needs deeper production, split the work into:
 - script draft
 - frame review
 - edit revision
+
+## Standard clip rule
+- default clip duration is 12 seconds
+- acceptable clip duration range is 10 to 15 seconds
+- keep motion subtle and readable

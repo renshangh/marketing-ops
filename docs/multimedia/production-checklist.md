@@ -9,6 +9,7 @@ Provide the final checklist before publishing multimedia assets.
 - choose the orientation
 - define the hook or headline
 - confirm the size
+- confirm the clip duration if it is a motion asset
 - confirm the accent color
 - confirm the source references
 
@@ -19,6 +20,7 @@ Provide the final checklist before publishing multimedia assets.
 - check whether the visual matches the goal
 - check spacing for overlay text
 - check whether it works on mobile
+- for clips, confirm the duration is within the 10 to 15 second standard
 
 ## Before publish
 - save the final asset in the right folder
@@ -28,7 +30,7 @@ Provide the final checklist before publishing multimedia assets.
 
 ## Storage
 - keep the docs in `docs/multimedia/`
-- keep finished assets in the existing images folder or the approved media folder
+- keep finished assets in `multimedia/graphics/` or the approved clip folder
 
 ## Notes
 If the asset does not support the message clearly, regenerate or simplify it.
