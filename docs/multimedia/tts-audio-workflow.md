@@ -15,6 +15,12 @@ Document the standard path from script to MP3 to final video mix.
 ## Standard use case
 This is the normal approach when the video needs spoken narration or a clean voice bed.
 
+## Localized versions
+- translate the script first
+- choose a matching localized voice
+- keep the same ffmpeg merge flow
+- use the localized graphic version when the visual language changes
+
 ## Audio file rule
 - use MP3 as the default intermediate format
 - keep the narration length aligned with the final video duration
