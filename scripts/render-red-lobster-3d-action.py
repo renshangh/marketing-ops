@@ -44,42 +44,56 @@ body {
   align-items: center;
   justify-content: center;
   transform-origin: 50% 64%;
-  animation: bodyKnock 0.95s ease-in-out infinite;
+  animation: sceneBob 1.05s ease-in-out infinite;
 }
 svg {
-  width: 125vw;
-  height: 125vh;
+  width: 128vw;
+  height: 128vh;
   display: block;
+}
+.lobster-body {
+  transform-box: fill-box;
+  transform-origin: 50% 62%;
+  animation: bodyKnock 1.05s ease-in-out infinite;
 }
 .claw-left {
   transform-box: fill-box;
   transform-origin: 56% 56%;
-  animation: clawLeft 0.95s ease-in-out infinite;
-  animation-delay: -0.10s;
+  animation: clawLeft 1.05s ease-in-out infinite;
+  animation-delay: -0.14s;
 }
 .claw-right {
   transform-box: fill-box;
   transform-origin: 44% 56%;
-  animation: clawRight 0.95s ease-in-out infinite;
-  animation-delay: -0.20s;
+  animation: clawRight 1.05s ease-in-out infinite;
+  animation-delay: -0.28s;
+}
+@keyframes sceneBob {
+  0%, 100% { transform: translate(0px, 0px) scale(1); }
+  20% { transform: translate(-2px, -4px) scale(1.01); }
+  48% { transform: translate(1px, 6px) scale(0.995); }
+  74% { transform: translate(-1px, -2px) scale(1.005); }
 }
 @keyframes bodyKnock {
-  0%, 100% { transform: translate(0px, 0px) rotate(5deg) scale(1.01); }
-  22% { transform: translate(6px, -12px) rotate(11deg) scale(1.03); }
-  50% { transform: translate(-12px, 20px) rotate(-7deg) scale(0.98); }
-  78% { transform: translate(4px, -4px) rotate(8deg) scale(1.01); }
+  0%, 100% { transform: translate(0px, 0px) rotate(7deg) scale(1.01); }
+  18% { transform: translate(6px, -16px) rotate(14deg) scale(1.035); }
+  42% { transform: translate(-10px, 18px) rotate(-12deg) scale(0.985); }
+  64% { transform: translate(8px, -6px) rotate(10deg) scale(1.015); }
+  84% { transform: translate(-4px, 4px) rotate(5deg) scale(1.005); }
 }
 @keyframes clawLeft {
-  0%, 100% { transform: translate(-4px, 4px) rotate(-8deg); }
-  22% { transform: translate(-8px, 6px) rotate(-12deg); }
-  50% { transform: translate(-22px, 18px) rotate(-28deg); }
-  78% { transform: translate(-10px, 8px) rotate(-15deg); }
+  0%, 100% { transform: translate(-6px, 6px) rotate(-10deg) scale(1); }
+  18% { transform: translate(-10px, 10px) rotate(-18deg) scale(1.03); }
+  42% { transform: translate(-24px, 20px) rotate(-34deg) scale(1.06); }
+  64% { transform: translate(-14px, 12px) rotate(-20deg) scale(1.02); }
+  84% { transform: translate(-8px, 8px) rotate(-14deg) scale(1.01); }
 }
 @keyframes clawRight {
-  0%, 100% { transform: translate(4px, 4px) rotate(8deg); }
-  22% { transform: translate(8px, 6px) rotate(12deg); }
-  50% { transform: translate(22px, 18px) rotate(28deg); }
-  78% { transform: translate(10px, 8px) rotate(15deg); }
+  0%, 100% { transform: translate(6px, 6px) rotate(10deg) scale(1); }
+  18% { transform: translate(10px, 10px) rotate(18deg) scale(1.03); }
+  42% { transform: translate(24px, 20px) rotate(34deg) scale(1.06); }
+  64% { transform: translate(14px, 12px) rotate(20deg) scale(1.02); }
+  84% { transform: translate(8px, 8px) rotate(14deg) scale(1.01); }
 }
 </style>
 """
