@@ -102,9 +102,13 @@
   </g>
 
   <!-- Connectors -->
+  <path d="M 380 320 C 440 320 450 350 500 380" fill="none" stroke="#00D1FF" stroke-width="8" stroke-opacity="0.10" stroke-linecap="round" />
   <path d="M 380 320 C 440 320 450 350 500 380" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-opacity="0.85" marker-end="url(#arrow)" stroke-linecap="round" />
+  <path d="M 380 470 C 440 470 450 470 500 470" fill="none" stroke="#00D1FF" stroke-width="8" stroke-opacity="0.10" stroke-linecap="round" />
   <path d="M 380 470 C 440 470 450 470 500 470" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-opacity="0.85" marker-end="url(#arrow)" stroke-linecap="round" />
+  <path d="M 380 620 C 440 620 450 590 500 560" fill="none" stroke="#00D1FF" stroke-width="8" stroke-opacity="0.10" stroke-linecap="round" />
   <path d="M 380 620 C 440 620 450 590 500 560" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-opacity="0.85" marker-end="url(#arrow)" stroke-linecap="round" />
+  <path d="M 380 770 C 445 770 455 720 500 650" fill="none" stroke="#00D1FF" stroke-width="8" stroke-opacity="0.10" stroke-linecap="round" />
   <path d="M 380 770 C 445 770 455 720 500 650" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-opacity="0.85" marker-end="url(#arrow)" stroke-linecap="round" />
 
   <!-- Right note panel -->
