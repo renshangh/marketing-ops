@@ -14,6 +14,7 @@ Document how to create localized versions of a motion clip.
 
 ## Example
 Use the Chinese graphic and Chinese narration for a localized version of the inbound lead capture clip.
+For the male-voice variant, use Sinji for the Chinese narration.
 
 ## Notes
 - keep the same motion style as the source clip
