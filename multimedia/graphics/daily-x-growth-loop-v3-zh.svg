@@ -1,0 +1,90 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg { fill: #0D0E12; }
+      .grid { stroke: #1C1E26; stroke-width: 1; }
+      .title { fill: #FFFFFF; font-family: 'Inter', sans-serif; font-size: 64px; font-weight: 800; letter-spacing: -0.03em; text-transform: uppercase; }
+      .card-bg { fill: #161922; stroke: #2A2E3B; stroke-width: 2; }
+      .card-active { stroke: #007AFF; filter: drop-shadow(0 0 12px rgba(0, 122, 255, 0.3)); }
+      .accent-line { fill: #007AFF; }
+      .card-num { fill: #007AFF; font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 600; letter-spacing: 0.05em; }
+      .card-text { fill: #FFFFFF; font-family: 'Inter', sans-serif; font-size: 38px; font-weight: 600; line-height: 1.15; }
+      .footer { fill: #4B5563; font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 400; letter-spacing: 0.02em; }
+      .connector { stroke: #1F2937; stroke-width: 3; stroke-dasharray: 8 8; }
+      .dot { fill: #2A2E3B; }
+    </style>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" class="grid"/>
+    </pattern>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1C212E;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#13161F;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <rect width="1600" height="900" class="bg" />
+  <rect width="1600" height="900" fill="url(#grid)" />
+
+  <text x="800" y="140" text-anchor="middle" class="title">每日 X 增长闭环</text>
+  <rect x="740" y="165" width="120" height="6" class="accent-line" rx="3" />
+
+  <line x1="390" y1="460" x2="450" y2="460" class="connector" />
+  <line x1="770" y1="460" x2="830" y2="460" class="connector" />
+  <line x1="1150" y1="460" x2="1210" y2="460" class="connector" />
+  <circle cx="420" cy="460" r="4" fill="#007AFF" />
+  <circle cx="800" cy="460" r="4" fill="#007AFF" />
+  <circle cx="1180" cy="460" r="4" fill="#007AFF" />
+
+  <g transform="translate(70, 270)">
+    <rect width="320" height="380" rx="20" fill="url(#cardGrad)" class="card-bg" />
+    <rect x="30" y="30" width="40" height="4" class="accent-line" rx="2" />
+    <text x="30" y="75" class="card-num">01 / 扫描</text>
+    <text x="30" y="140" class="card-text">
+      <tspan x="30" dy="0">扫描前</tspan>
+      <tspan x="30" dy="50">10 条帖子</tspan>
+    </text>
+    <circle cx="290" cy="30" r="3" class="dot" />
+    <circle cx="275" cy="30" r="3" class="dot" />
+  </g>
+
+  <g transform="translate(450, 270)">
+    <rect width="320" height="380" rx="20" fill="url(#cardGrad)" class="card-bg" />
+    <rect x="30" y="30" width="40" height="4" class="accent-line" rx="2" />
+    <text x="30" y="75" class="card-num">02 / 互动</text>
+    <text x="30" y="140" class="card-text">
+      <tspan x="30" dy="0">只回复</tspan>
+      <tspan x="30" dy="50">相关内容</tspan>
+    </text>
+    <circle cx="290" cy="30" r="3" class="dot" />
+    <circle cx="275" cy="30" r="3" class="dot" />
+  </g>
+
+  <g transform="translate(830, 270)">
+    <rect width="320" height="380" rx="20" fill="url(#cardGrad)" class="card-bg card-active" />
+    <rect x="30" y="30" width="40" height="4" class="accent-line" rx="2" />
+    <text x="30" y="75" class="card-num">03 / 创作</text>
+    <text x="30" y="140" class="card-text">
+      <tspan x="30" dy="0">发布 1 条</tspan>
+      <tspan x="30" dy="50">原创帖子</tspan>
+    </text>
+    <circle cx="290" cy="30" r="3" fill="#007AFF" />
+    <circle cx="275" cy="30" r="3" fill="#007AFF" />
+  </g>
+
+  <g transform="translate(1210, 270)">
+    <rect width="320" height="380" rx="20" fill="url(#cardGrad)" class="card-bg" />
+    <rect x="30" y="30" width="40" height="4" class="accent-line" rx="2" />
+    <text x="30" y="75" class="card-num">04 / 分析</text>
+    <text x="30" y="140" class="card-text">
+      <tspan x="30" dy="0">记录获得</tspan>
+      <tspan x="30" dy="50">关注的内容</tspan>
+    </text>
+    <circle cx="290" cy="30" r="3" class="dot" />
+    <circle cx="275" cy="30" r="3" class="dot" />
+  </g>
+
+  <g transform="translate(800, 810)">
+    <text text-anchor="middle" class="footer">当闭环每天执行，速度就会复利增长。</text>
+    <path d="M -240 15 L 240 15" stroke="#1F2937" stroke-width="1" />
+  </g>
+</svg>
