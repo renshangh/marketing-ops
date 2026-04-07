@@ -1,0 +1,132 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10131A;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0B0D12;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#161B25;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#11151D;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#007AFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00D1FF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#FFFFFF" stroke-width="0.7" stroke-opacity="0.04" />
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#00D1FF" />
+    </marker>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bgGrad)" />
+  <rect width="1600" height="900" fill="url(#grid)" />
+
+  <!-- Header -->
+  <text x="80" y="110" font-family="Inter, -apple-system, sans-serif" font-size="54" font-weight="800" fill="#FFFFFF" letter-spacing="-1.4">OpenClaw Inbound Capture Loop</text>
+  <text x="80" y="148" font-family="ui-monospace, monospace" font-size="16" font-weight="600" fill="#00D1FF" letter-spacing="2.4">MULTI-SOURCE INBOUND → ONE OPERATING FLOW</text>
+  <rect x="80" y="168" width="520" height="4" rx="2" fill="url(#accentGrad)" opacity="0.65" />
+
+  <!-- Left source cards -->
+  <g transform="translate(80, 260)">
+    <g>
+      <rect width="300" height="120" rx="16" fill="url(#cardGrad)" stroke="#2A3140" stroke-width="1.5" />
+      <rect x="24" y="22" width="38" height="4" rx="2" fill="url(#accentGrad)" />
+      <text x="24" y="62" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#00D1FF">DISCORD DMs</text>
+      <text x="24" y="92" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">Capture the first signal</text>
+    </g>
+
+    <g transform="translate(0, 150)">
+      <rect width="300" height="120" rx="16" fill="url(#cardGrad)" stroke="#2A3140" stroke-width="1.5" />
+      <rect x="24" y="22" width="38" height="4" rx="2" fill="url(#accentGrad)" />
+      <text x="24" y="62" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#00D1FF">TELEGRAM</text>
+      <text x="24" y="92" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">Normalize the context</text>
+    </g>
+
+    <g transform="translate(0, 300)">
+      <rect width="300" height="120" rx="16" fill="url(#cardGrad)" stroke="#2A3140" stroke-width="1.5" />
+      <rect x="24" y="22" width="38" height="4" rx="2" fill="url(#accentGrad)" />
+      <text x="24" y="62" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#00D1FF">EMAIL</text>
+      <text x="24" y="92" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">Keep the thread intact</text>
+    </g>
+
+    <g transform="translate(0, 450)">
+      <rect width="300" height="120" rx="16" fill="url(#cardGrad)" stroke="#2A3140" stroke-width="1.5" />
+      <rect x="24" y="22" width="38" height="4" rx="2" fill="url(#accentGrad)" />
+      <text x="24" y="62" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#00D1FF">WEB FORMS</text>
+      <text x="24" y="92" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="600" fill="#FFFFFF">Route the next step</text>
+    </g>
+  </g>
+
+  <!-- Central workflow panel -->
+  <g transform="translate(500, 215)">
+    <rect width="560" height="530" rx="24" fill="url(#cardGrad)" stroke="#323A4A" stroke-width="1.5" />
+    <rect x="32" y="30" width="120" height="6" rx="3" fill="url(#accentGrad)" />
+    <text x="32" y="80" font-family="Inter, -apple-system, sans-serif" font-size="34" font-weight="700" fill="#FFFFFF">Unify the lead signal</text>
+    <text x="32" y="116" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#8D97A8">One workflow, not four disconnected inboxes.</text>
+
+    <!-- central node -->
+    <g transform="translate(90, 165)">
+      <circle cx="190" cy="105" r="92" fill="#0E1524" stroke="#00D1FF" stroke-width="2" opacity="0.9" filter="url(#glow)" />
+      <circle cx="190" cy="105" r="58" fill="none" stroke="#00D1FF" stroke-width="1.5" stroke-dasharray="5 6" opacity="0.7" />
+      <text x="190" y="92" text-anchor="middle" font-family="ui-monospace, monospace" font-size="18" font-weight="700" fill="#00D1FF">LEAD CARD</text>
+      <text x="190" y="120" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Normalize</text>
+      <text x="190" y="146" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Tag</text>
+      <text x="190" y="172" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Draft</text>
+      <text x="190" y="198" text-anchor="middle" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Route</text>
+    </g>
+
+    <!-- mini steps -->
+    <g transform="translate(40, 390)">
+      <rect x="0" y="0" width="110" height="78" rx="14" fill="#121822" stroke="#273041" />
+      <text x="20" y="31" font-family="ui-monospace, monospace" font-size="15" font-weight="700" fill="#00D1FF">1</text>
+      <text x="20" y="55" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">Capture</text>
+      <rect x="130" y="0" width="110" height="78" rx="14" fill="#121822" stroke="#273041" />
+      <text x="150" y="31" font-family="ui-monospace, monospace" font-size="15" font-weight="700" fill="#00D1FF">2</text>
+      <text x="150" y="55" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">Normalize</text>
+      <rect x="260" y="0" width="110" height="78" rx="14" fill="#121822" stroke="#273041" />
+      <text x="280" y="31" font-family="ui-monospace, monospace" font-size="15" font-weight="700" fill="#00D1FF">3</text>
+      <text x="280" y="55" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">Route</text>
+      <rect x="390" y="0" width="110" height="78" rx="14" fill="#121822" stroke="#273041" />
+      <text x="410" y="31" font-family="ui-monospace, monospace" font-size="15" font-weight="700" fill="#00D1FF">4</text>
+      <text x="410" y="55" font-family="Inter, -apple-system, sans-serif" font-size="16" font-weight="600" fill="#FFFFFF">Reply</text>
+    </g>
+  </g>
+
+  <!-- Connectors -->
+  <path d="M 380 320 C 440 320 450 350 500 380" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-opacity="0.85" marker-end="url(#arrow)" />
+  <path d="M 380 470 C 440 470 450 470 500 470" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-opacity="0.85" marker-end="url(#arrow)" />
+  <path d="M 380 620 C 440 620 450 590 500 560" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-opacity="0.85" marker-end="url(#arrow)" />
+  <path d="M 380 770 C 445 770 455 720 500 650" fill="none" stroke="url(#accentGrad)" stroke-width="3" stroke-opacity="0.85" marker-end="url(#arrow)" />
+
+  <!-- Right note panel -->
+  <g transform="translate(1100, 270)">
+    <rect width="420" height="420" rx="22" fill="#121822" stroke="#2A3140" stroke-width="1.5" />
+    <rect x="30" y="30" width="34" height="4" rx="2" fill="url(#accentGrad)" />
+    <text x="30" y="78" font-family="Inter, -apple-system, sans-serif" font-size="32" font-weight="700" fill="#FFFFFF">Why it matters</text>
+    <text x="30" y="126" font-family="Inter, -apple-system, sans-serif" font-size="22" font-weight="600" fill="#FFFFFF">
+      <tspan x="30" dy="0">Fragmented inbound</tspan>
+      <tspan x="30" dy="34">creates missed follow-up.</tspan>
+    </text>
+    <text x="30" y="220" font-family="Inter, -apple-system, sans-serif" font-size="20" font-weight="400" fill="#9AA4B2">
+      <tspan x="30" dy="0">OpenClaw becomes useful when</tspan>
+      <tspan x="30" dy="30">it turns scattered signals into</tspan>
+      <tspan x="30" dy="30">one operating workflow.</tspan>
+    </text>
+    <rect x="30" y="320" width="360" height="56" rx="14" fill="#0E1524" stroke="#233044" />
+    <text x="50" y="355" font-family="ui-monospace, monospace" font-size="16" font-weight="700" fill="#00D1FF">CAPTURE → NORMALIZE → TAG → ROUTE</text>
+  </g>
+
+  <!-- Footer -->
+  <rect x="80" y="820" width="1440" height="1" fill="#273041" />
+  <text x="80" y="860" font-family="Inter, -apple-system, sans-serif" font-size="18" font-weight="400" fill="#8D97A8">OpenClaw turns scattered inbound attention into an actual operating workflow.</text>
+  <text x="1520" y="860" text-anchor="end" font-family="ui-monospace, monospace" font-size="14" font-weight="600" fill="#445066">X POST IDEA 01</text>
+</svg>
