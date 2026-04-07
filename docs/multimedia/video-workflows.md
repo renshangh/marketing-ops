@@ -65,6 +65,13 @@ The final output should include:
 - review notes
 - export or post notes
 
+## Audio add-on workflow
+- finalize the script first
+- generate MP3 narration with the approved TTS tool
+- merge narration with the clip using ffmpeg
+- review sync and timing before publish
+
+
 ## Notes
 If the video needs deeper production, split the work into:
 - concept draft
