@@ -18,6 +18,7 @@ This is the normal approach when the video needs spoken narration or a clean voi
 ## Audio file rule
 - use MP3 as the default intermediate format
 - keep the narration length aligned with the final video duration
+- if the narration runs long, render the motion base slightly longer so the audio is not cut off
 - make sure the voice track is approved or licensed
 
 ## ffmpeg merge pattern
@@ -30,3 +31,4 @@ ffmpeg -y -i input.mp4 -i audio.mp3 -shortest -c:v copy -c:a aac -b:a 192k outpu
 - use TTS to produce a clean MP3 first
 - use ffmpeg to combine the final audio and video assets
 - keep the final clip within the 10 to 15 second standard when possible
+- when using narration, make the motion base long enough to preserve the full voice track
