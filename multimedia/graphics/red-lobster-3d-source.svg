@@ -1,0 +1,86 @@
+<svg viewBox="0 0 900 1600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#001d3d" />
+      <stop offset="40%" stop-color="#003566" />
+      <stop offset="80%" stop-color="#ff9100" />
+      <stop offset="100%" stop-color="#ffc300" />
+    </linearGradient>
+    <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff9100" />
+      <stop offset="10%" stop-color="#003566" />
+      <stop offset="100%" stop-color="#000814" />
+    </linearGradient>
+    <radialGradient id="lobsterShell" cx="30%" cy="30%" r="70%">
+      <stop offset="0%" stop-color="#ff4d4d" />
+      <stop offset="70%" stop-color="#8b0000" />
+      <stop offset="100%" stop-color="#4a0000" />
+    </radialGradient>
+    <radialGradient id="goldReflect" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff3b0" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#ff9100" stop-opacity="0" />
+    </radialGradient>
+    <filter id="blurDOF">
+      <feGaussianBlur stdDeviation="8" />
+    </filter>
+    <filter id="softBlur">
+      <feGaussianBlur stdDeviation="3" />
+    </filter>
+    <filter id="wetGlow">
+      <feGaussianBlur stdDeviation="1.5" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <rect width="900" height="1600" fill="url(#skyGrad)" />
+  
+  <rect x="0" y="800" width="900" height="800" fill="url(#seaGrad)" filter="url(#blurDOF)" />
+  
+  <g opacity="0.4">
+    <ellipse cx="450" cy="850" rx="400" ry="20" fill="url(#goldReflect)" filter="url(#softBlur)" />
+    <ellipse cx="450" cy="880" rx="300" ry="10" fill="#fff" filter="url(#softBlur)" />
+    <path d="M100 900 Q 450 910 800 900" stroke="#ffc300" stroke-width="2" fill="none" opacity="0.5" />
+    <path d="M200 930 Q 450 940 700 930" stroke="#ff9100" stroke-width="1" fill="none" opacity="0.3" />
+  </g>
+
+  <g transform="translate(450, 1000) scale(1.2)">
+    <g transform="translate(0, 100)">
+      <path d="M-60 0 Q 0 80 60 0 L 50 -40 Q 0 0 -50 -40 Z" fill="url(#lobsterShell)" />
+      <path d="M-55 40 Q 0 110 55 40 L 45 10 Q 0 50 -45 10 Z" fill="url(#lobsterShell)" />
+      <path d="M-40 100 Q 0 160 40 100 L 70 180 Q 0 200 -70 180 Z" fill="url(#lobsterShell)" />
+    </g>
+
+    <g transform="translate(-150, -50) rotate(-20)">
+      <path d="M0 0 Q -80 -100 -180 -50 Q -220 50 -150 120 Q -80 80 0 0" fill="url(#lobsterShell)" />
+      <path d="M-180 -50 Q -250 -20 -240 40 Q -200 20 -180 -50" fill="url(#lobsterShell)" />
+      <ellipse cx="-100" cy="-20" rx="30" ry="10" fill="url(#goldReflect)" transform="rotate(30 -100 -20)" filter="url(#softBlur)" />
+    </g>
+    <g transform="translate(150, -50) rotate(20) scale(-1, 1)">
+      <path d="M0 0 Q -80 -100 -180 -50 Q -220 50 -150 120 Q -80 80 0 0" fill="url(#lobsterShell)" />
+      <path d="M-180 -50 Q -250 -20 -240 40 Q -200 20 -180 -50" fill="url(#lobsterShell)" />
+      <ellipse cx="-100" cy="-20" rx="30" ry="10" fill="url(#goldReflect)" transform="rotate(30 -100 -20)" filter="url(#softBlur)" />
+    </g>
+
+    <path d="M-100 10 L -180 80" stroke="#8b0000" stroke-width="8" stroke-linecap="round" />
+    <path d="M-90 40 L -160 120" stroke="#8b0000" stroke-width="7" stroke-linecap="round" />
+    <path d="M100 10 L 180 80" stroke="#8b0000" stroke-width="8" stroke-linecap="round" />
+    <path d="M90 40 L 160 120" stroke="#8b0000" stroke-width="7" stroke-linecap="round" />
+
+    <path d="M-80 -200 Q 0 -280 80 -200 Q 100 50 0 100 Q -100 50 -80 -200" fill="url(#lobsterShell)" />
+    
+    <ellipse cx="-40" cy="-150" rx="12" ry="15" fill="#000" />
+    <circle cx="-44" cy="-156" r="4" fill="#fff" />
+    <ellipse cx="40" cy="-150" rx="12" ry="15" fill="#000" />
+    <circle cx="36" cy="-156" r="4" fill="#fff" />
+
+    <path d="M-20 -80 Q 0 -65 20 -80" fill="none" stroke="#4a0000" stroke-width="3" stroke-linecap="round" />
+
+    <path d="M-30 -220 Q -150 -400 -250 -350" fill="none" stroke="#ff4d4d" stroke-width="2" opacity="0.8" />
+    <path d="M30 -220 Q 150 -400 250 -350" fill="none" stroke="#ff4d4d" stroke-width="2" opacity="0.8" />
+
+    <path d="M-60 -180 Q -30 -200 0 -180 Q 30 -200 60 -180" fill="none" stroke="#fff" stroke-width="1" opacity="0.3" filter="url(#wetGlow)" />
+    <ellipse cx="0" cy="-120" rx="50" ry="80" fill="url(#goldReflect)" opacity="0.2" filter="url(#softBlur)" />
+  </g>
+
+  <rect width="900" height="1600" fill="none" stroke="#ffc300" stroke-width="40" opacity="0.1" />
+</svg>
