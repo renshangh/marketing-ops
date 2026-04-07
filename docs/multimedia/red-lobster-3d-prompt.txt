@@ -1,0 +1,23 @@
+Create a 6-second vertical lobster movie that feels photorealistic and cinematic.
+
+Source guidance:
+- start from a real lobster photo, not an illustration
+- make it feel like the lobster is surfacing naturally in warm sunset water
+
+Look and feel:
+- realistic shell texture and claws
+- wet highlights and natural color variation
+- warm sunset grade, orange gold reflections, deep blue sea shadows
+- soft ripples, subtle motion, shallow depth of field
+- friendly, lively energy, not cartoonish
+
+Negative prompt:
+- no cartoon style
+- no flat outlines
+- no text
+- no humans
+- no clutter
+- no poster look
+
+
+Reference build source: NOAA lobster photo from Wikimedia Commons, downloaded by the build script.
