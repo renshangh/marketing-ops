@@ -44,7 +44,6 @@ body {
   align-items: center;
   justify-content: center;
   transform-origin: 50% 64%;
-  animation: sceneBob 1.05s ease-in-out infinite;
 }
 svg {
   width: 128vw;
@@ -68,32 +67,26 @@ svg {
   animation: clawRight 1.05s ease-in-out infinite;
   animation-delay: -0.28s;
 }
-@keyframes sceneBob {
-  0%, 100% { transform: translate(0px, 0px) scale(1); }
-  20% { transform: translate(-2px, -4px) scale(1.01); }
-  48% { transform: translate(1px, 6px) scale(0.995); }
-  74% { transform: translate(-1px, -2px) scale(1.005); }
-}
 @keyframes bodyKnock {
-  0%, 100% { transform: translate(0px, 0px) rotate(7deg) scale(1.01); }
-  18% { transform: translate(6px, -16px) rotate(14deg) scale(1.035); }
-  42% { transform: translate(-10px, 18px) rotate(-12deg) scale(0.985); }
-  64% { transform: translate(8px, -6px) rotate(10deg) scale(1.015); }
-  84% { transform: translate(-4px, 4px) rotate(5deg) scale(1.005); }
+  0%, 100% { transform: translate(0px, 0px) rotate(5deg) scale(1.005); }
+  18% { transform: translate(4px, -10px) rotate(11deg) scale(1.02); }
+  42% { transform: translate(-8px, 14px) rotate(-8deg) scale(0.995); }
+  64% { transform: translate(6px, -4px) rotate(8deg) scale(1.01); }
+  84% { transform: translate(-2px, 2px) rotate(4deg) scale(1.002); }
 }
 @keyframes clawLeft {
-  0%, 100% { transform: translate(-6px, 6px) rotate(-10deg) scale(1); }
-  18% { transform: translate(-10px, 10px) rotate(-18deg) scale(1.03); }
-  42% { transform: translate(-24px, 20px) rotate(-34deg) scale(1.06); }
-  64% { transform: translate(-14px, 12px) rotate(-20deg) scale(1.02); }
-  84% { transform: translate(-8px, 8px) rotate(-14deg) scale(1.01); }
+  0%, 100% { transform: translate(-2px, 2px) rotate(-6deg) scale(1); }
+  18% { transform: translate(-6px, 6px) rotate(-10deg) scale(1.02); }
+  42% { transform: translate(-18px, 16px) rotate(-24deg) scale(1.04); }
+  64% { transform: translate(-10px, 8px) rotate(-14deg) scale(1.01); }
+  84% { transform: translate(-4px, 4px) rotate(-8deg) scale(1.005); }
 }
 @keyframes clawRight {
-  0%, 100% { transform: translate(6px, 6px) rotate(10deg) scale(1); }
-  18% { transform: translate(10px, 10px) rotate(18deg) scale(1.03); }
-  42% { transform: translate(24px, 20px) rotate(34deg) scale(1.06); }
-  64% { transform: translate(14px, 12px) rotate(20deg) scale(1.02); }
-  84% { transform: translate(8px, 8px) rotate(14deg) scale(1.01); }
+  0%, 100% { transform: translate(2px, 2px) rotate(6deg) scale(1); }
+  18% { transform: translate(6px, 6px) rotate(10deg) scale(1.02); }
+  42% { transform: translate(18px, 16px) rotate(24deg) scale(1.04); }
+  64% { transform: translate(10px, 8px) rotate(14deg) scale(1.01); }
+  84% { transform: translate(4px, 4px) rotate(8deg) scale(1.005); }
 }
 </style>
 """
