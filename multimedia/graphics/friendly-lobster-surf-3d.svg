@@ -1,0 +1,133 @@
+<svg width="1080" height="1920" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ffbb67"/>
+      <stop offset="35%" stop-color="#ff7d63"/>
+      <stop offset="68%" stop-color="#4e3e92"/>
+      <stop offset="100%" stop-color="#08131f"/>
+    </linearGradient>
+    <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#39d8d8"/>
+      <stop offset="100%" stop-color="#072d48"/>
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff7cf"/>
+      <stop offset="70%" stop-color="#ffd76b"/>
+      <stop offset="100%" stop-color="#ff9f4f"/>
+    </radialGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#ffe0a0" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#ff8a4d" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#ff8a4d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="shell" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff8b63"/>
+      <stop offset="45%" stop-color="#e12d2d"/>
+      <stop offset="100%" stop-color="#8b1020"/>
+    </linearGradient>
+    <linearGradient id="shell2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffb89e"/>
+      <stop offset="100%" stop-color="#ff5f4b"/>
+    </linearGradient>
+    <linearGradient id="board" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffd17d"/>
+      <stop offset="50%" stop-color="#ef8b41"/>
+      <stop offset="100%" stop-color="#d95f38"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="12"/></filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="22"/></filter>
+  </defs>
+
+  <rect width="1080" height="1920" fill="url(#sky)"/>
+  <circle cx="650" cy="980" r="140" fill="url(#sun)" opacity="0.95"/>
+  <ellipse cx="520" cy="980" rx="380" ry="260" fill="url(#glow)"/>
+
+  <path d="M 0 1125 C 150 1100 280 1110 390 1135 C 540 1170 650 1160 785 1128 C 900 1100 985 1100 1080 1118 L 1080 1920 L 0 1920 Z" fill="url(#sea)"/>
+  <path d="M 0 1110 C 130 1090 275 1095 410 1122 C 545 1150 660 1140 795 1110 C 910 1088 995 1090 1080 1100" fill="none" stroke="#c1faff" stroke-width="14" stroke-linecap="round" opacity="0.28"/>
+  <path d="M 0 1165 C 110 1145 225 1150 350 1172 C 500 1200 615 1198 760 1162 C 885 1130 980 1134 1080 1152" fill="none" stroke="#91f5ff" stroke-width="10" stroke-linecap="round" opacity="0.14"/>
+
+  <path d="M 0 1465 C 180 1425 290 1460 425 1505 C 565 1548 725 1550 860 1498 C 960 1460 1020 1458 1080 1470 L 1080 1920 L 0 1920 Z" fill="#06131c" opacity="0.95"/>
+
+  <!-- surfboard -->
+  <g filter="url(#shadow)">
+    <path d="M 330 1280 C 420 1248 655 1250 753 1290 C 770 1296 775 1322 760 1336 C 650 1437 388 1435 300 1348 C 290 1338 295 1304 330 1280 Z" fill="url(#board)"/>
+    <path d="M 355 1298 C 438 1278 640 1280 725 1310" stroke="#fff4d4" stroke-width="10" stroke-linecap="round" opacity="0.55"/>
+    <path d="M 342 1330 C 446 1308 627 1308 740 1320" stroke="#7a3f2a" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  </g>
+
+  <!-- wave splash -->
+  <g opacity="0.75">
+    <path d="M 190 1115 C 260 1088 310 1088 380 1115 C 430 1134 475 1138 540 1124 C 610 1110 665 1092 730 1108 C 802 1126 850 1128 910 1116" fill="none" stroke="#f0ffff" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="210" cy="1070" r="8" fill="#fff" opacity="0.35"/>
+    <circle cx="245" cy="1045" r="5" fill="#fff" opacity="0.3"/>
+    <circle cx="860" cy="1050" r="7" fill="#fff" opacity="0.3"/>
+    <circle cx="835" cy="1080" r="5" fill="#fff" opacity="0.25"/>
+  </g>
+
+  <ellipse cx="500" cy="1350" rx="290" ry="88" fill="#000" opacity="0.25" filter="url(#shadow)"/>
+
+  <!-- lobster -->
+  <g transform="translate(490,980)">
+    <!-- antennae -->
+    <path d="M -12 -280 C -90 -390 -170 -455 -278 -520" fill="none" stroke="#ffd0bf" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 12 -280 C 90 -390 170 -455 278 -520" fill="none" stroke="#ffd0bf" stroke-width="8" stroke-linecap="round"/>
+
+    <!-- eyes -->
+    <line x1="-70" y1="-210" x2="-70" y2="-168" stroke="#fff0ea" stroke-width="10" stroke-linecap="round"/>
+    <line x1="70" y1="-210" x2="70" y2="-168" stroke="#fff0ea" stroke-width="10" stroke-linecap="round"/>
+    <circle cx="-70" cy="-186" r="28" fill="#1f0808"/>
+    <circle cx="70" cy="-186" r="28" fill="#1f0808"/>
+    <circle cx="-60" cy="-192" r="7" fill="#fff"/>
+    <circle cx="80" cy="-192" r="7" fill="#fff"/>
+
+    <!-- claws -->
+    <g transform="translate(-250,-20) rotate(-8)">
+      <path d="M 0 0 C -75 -14 -126 -44 -160 -98 C -188 -146 -180 -214 -120 -228 C -74 -238 -38 -212 -28 -182 C -16 -150 -8 -120 0 -96" fill="none" stroke="#ae141b" stroke-width="58" stroke-linecap="round"/>
+      <path d="M -137 -214 C -73 -248 -20 -242 26 -205" fill="none" stroke="#ff9a78" stroke-width="12" stroke-linecap="round" opacity="0.65"/>
+    </g>
+    <g transform="translate(250,-20) scale(-1,1) rotate(-8)">
+      <path d="M 0 0 C -75 -14 -126 -44 -160 -98 C -188 -146 -180 -214 -120 -228 C -74 -238 -38 -212 -28 -182 C -16 -150 -8 -120 0 -96" fill="none" stroke="#ae141b" stroke-width="58" stroke-linecap="round"/>
+      <path d="M -137 -214 C -73 -248 -20 -242 26 -205" fill="none" stroke="#ff9a78" stroke-width="12" stroke-linecap="round" opacity="0.65"/>
+    </g>
+
+    <!-- body -->
+    <ellipse cx="0" cy="48" rx="215" ry="174" fill="url(#shell)" stroke="#5f0c11" stroke-width="12"/>
+    <ellipse cx="0" cy="0" rx="160" ry="104" fill="#ffd1c1" opacity="0.14"/>
+    <path d="M -120 8 C -70 -20 70 -20 120 8" fill="none" stroke="#ffd9cd" stroke-width="8" opacity="0.2"/>
+    <path d="M -88 56 C -48 36 48 36 88 56" fill="none" stroke="#ffd9cd" stroke-width="8" opacity="0.16"/>
+    <path d="M -84 122 Q 0 172 84 122" fill="none" stroke="#ffe8e1" stroke-width="10" stroke-linecap="round" opacity="0.95"/>
+    <circle cx="-88" cy="48" r="8" fill="#ffcebc" opacity="0.35"/>
+    <circle cx="88" cy="48" r="8" fill="#ffcebc" opacity="0.35"/>
+    <path d="M -100 -30 C -40 -60 40 -60 100 -30" fill="none" stroke="#fff0ee" stroke-width="10" opacity="0.15"/>
+
+    <!-- legs -->
+    <g stroke="#8e1117" stroke-width="12" stroke-linecap="round">
+      <path d="M -132 132 C -194 160 -250 228 -316 314"/>
+      <path d="M -84 158 C -152 214 -186 294 -232 392"/>
+      <path d="M -34 172 C -80 250 -96 326 -120 424"/>
+      <path d="M 34 172 C 80 250 96 326 120 424"/>
+      <path d="M 84 158 C 152 214 186 294 232 392"/>
+      <path d="M 132 132 C 194 160 250 228 316 314"/>
+    </g>
+
+    <!-- tail fan -->
+    <g transform="translate(0,236) rotate(2)">
+      <path d="M 0 0 C -58 34 -92 94 -86 146 C -48 170 -16 184 0 190 C 16 184 48 170 86 146 C 92 94 58 34 0 0 Z" fill="url(#shell2)" stroke="#5f0c11" stroke-width="10"/>
+      <path d="M 0 16 C -36 52 -52 92 -46 128 C -26 142 -10 148 0 152 C 10 148 26 142 46 128 C 52 92 36 52 0 16 Z" fill="#fff1ea" opacity="0.14"/>
+    </g>
+
+    <!-- highlights -->
+    <path d="M -100 -150 C -40 -205 46 -216 120 -180" fill="none" stroke="#fff3e9" stroke-width="12" opacity="0.18" stroke-linecap="round"/>
+    <path d="M -55 -110 C 10 -150 60 -155 98 -130" fill="none" stroke="#fff3e9" stroke-width="8" opacity="0.15" stroke-linecap="round"/>
+  </g>
+
+  <!-- water spray around lobster -->
+  <g opacity="0.6">
+    <circle cx="220" cy="1090" r="10" fill="#fff" opacity="0.24"/>
+    <circle cx="260" cy="1050" r="6" fill="#fff" opacity="0.22"/>
+    <circle cx="820" cy="1070" r="9" fill="#fff" opacity="0.24"/>
+    <circle cx="860" cy="1030" r="5" fill="#fff" opacity="0.18"/>
+    <circle cx="725" cy="1140" r="6" fill="#fff" opacity="0.18"/>
+    <circle cx="370" cy="1145" r="5" fill="#fff" opacity="0.18"/>
+  </g>
+</svg>

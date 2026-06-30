@@ -1,2 +1,7 @@
 # Local-only generated motion clips
 multimedia/clips/
+
+# Local editor/system state
+.DS_Store
+.obsidian/
+docs/.obsidian/
