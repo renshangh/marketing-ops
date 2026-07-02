@@ -1803,6 +1803,252 @@ Include:
 
 ---
 
+## 42. Preflight checks before AI-assisted X reply drafting
+
+### Objective
+Create an X post draft about running a source-readiness preflight before asking AI to draft replies, so operators know whether the day has verified X inputs, degraded fallback inputs, or no trustworthy source lane.
+
+### Target audience
+- GTM operators
+- social leads
+- founder-led marketing teams
+- people building AI-assisted engagement workflows
+
+### Core angle
+The fastest way to waste review time is to generate polished replies from unverified inputs. A better workflow checks source access first, then decides whether to produce a reply table, run watchlist maintenance, or log a source-health issue.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- runs a morning X source preflight before drafting
+- checks whether authenticated X, approved watchlists, and public fallback lanes are available
+- labels the scan as `verified`, `degraded`, or `blocked`
+- drafts replies only when source quality is high enough
+- otherwise returns an operator note with the source failure and next best action
+
+### Useful details to include
+- why source preflight should happen before copy generation
+- how this protects operators from reviewing hallucinated or stale queues
+- why a blocked scan can still create useful backlog or watchlist work
+- how preflight status makes human approval faster and safer
+
+### Desired takeaway
+OpenClaw makes reply ops more trustworthy by checking the source lane before producing the copy lane.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 operator-process-heavy version
+- short rationale focused on preflight checks as the trust layer for AI-assisted engagement
+
+---
+
+## 43. Provenance labels for AI-assisted X reply tables
+
+### Objective
+Create an X post draft about adding clear source/provenance labels to every AI-assisted X reply table so operators know which suggestions came from verified live posts, approved watchlists, cached research, or blocked fallback paths.
+
+### Target audience
+- GTM operators
+- social leads
+- founder-led marketing teams
+- people building AI-assisted engagement workflows
+
+### Core angle
+A reply table is only useful if the operator can trust where each row came from. The workflow should show the source lane and confidence state before anyone reviews or posts copy.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- scans candidate X posts when authenticated access is available
+- marks each row with a source state like `live X`, `watchlist`, `public fallback`, or `blocked`
+- includes post URL, suggested reply, and source confidence
+- separates verified replies from backlog ideas
+- keeps final posting behind human review
+
+### Useful details to include
+- why provenance protects operators from stale or invented inputs
+- how source labels make approval faster
+- why fallback rows should not be treated like verified live posts
+- how this creates a cleaner bridge between discovery and posting
+
+### Desired takeaway
+OpenClaw can make AI-assisted social ops safer by showing not just what to reply, but why the input is trustworthy.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more operational/process-heavy version
+- short rationale focused on source provenance as the trust layer for reply ops
+
+---
+
+## 44. Watchlist-first X engagement when the home feed is blocked
+
+### Objective
+Create an X post draft about replacing fragile home-feed scraping with maintained account/topic watchlists for daily reply ops.
+
+### Target audience
+- growth operators
+- social managers
+- technical founders
+- AI workflow builders
+
+### Core angle
+The home feed is noisy and easy to block. A maintained watchlist gives the operator a cleaner, repeatable source of high-fit posts without pretending every scan starts from a perfect public timeline.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- keeps an approved watchlist of accounts and topic searches
+- scans those lanes before attempting broad feed discovery
+- filters for relevance, recency, and prior replies
+- drafts a compact review table for only the best candidates
+- logs any blocked or low-signal source lane for later maintenance
+
+### Useful details to include
+- why source curation matters more than raw feed volume
+- how watchlists reduce review fatigue
+- why blocked public feeds should trigger source maintenance, not fake output
+- how this keeps daily engagement reliable
+
+### Desired takeaway
+OpenClaw helps social operators build repeatable engagement systems by making the input layer deliberate.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more systems-heavy version
+- short rationale focused on watchlists as a durable source layer
+
+---
+
+## 45. Degraded-source reporting for X reply scans
+
+### Objective
+Create an X post draft about what a useful AI marketing operator should do when live X access is degraded: report the source state clearly, avoid invented reply targets, and convert the failed scan into source-maintenance work.
+
+### Target audience
+- GTM operators
+- founder-led marketing teams
+- social leads
+- AI workflow builders
+
+### Core angle
+The wrong move when a live feed is blocked is to keep generating confident-looking replies from weak inputs. The better move is to label the scan as degraded, show what failed, and hand the operator a next action.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- attempts the live X scan
+- detects when the home feed, search page, or guest search endpoint is blocked
+- returns a compact operator note instead of fake post URLs
+- logs the failed source lane for maintenance
+- adds new backlog ideas for better source reliability
+
+### Useful details to include
+- why "no verified rows" is better than hallucinated rows
+- how degraded-source notes protect brand review
+- why source failures can still produce useful systems work
+- how this improves trust in human-reviewed reply ops
+
+### Desired takeaway
+Trustworthy AI social ops should tell you when the input layer is broken instead of pretending the queue is healthy.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more operator/process-heavy version
+- short rationale focused on degraded-source reporting as a trust signal
+
+---
+
+## 46. Reply ops should separate discovery failures from copy failures
+
+### Objective
+Create an X post draft about diagnosing AI-assisted reply workflows by separating discovery/source access problems from copywriting quality problems.
+
+### Target audience
+- growth operators
+- social managers
+- technical marketers
+- founders building repeatable GTM systems
+
+### Core angle
+When a reply workflow fails, teams often blame the copy. But many failures start earlier: the system did not get trustworthy posts, could not access the feed, or had no curated source list to scan.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- runs source discovery checks first
+- reports whether the scan found verified live posts
+- only moves into reply drafting when inputs are good enough
+- otherwise routes the task to source-list maintenance or query tuning
+- keeps copy review separate from source-health review
+
+### Useful details to include
+- why discovery quality determines reply quality
+- how separating failure types makes debugging faster
+- why better source lists beat more aggressive copy generation
+- how operators can decide whether to draft, tune, or pause
+
+### Desired takeaway
+Good reply ops are not just about better copy. They are about knowing whether discovery, filtering, or drafting is the part that needs work.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more systems-heavy version
+- short rationale focused on diagnosing the workflow layer that actually failed
+
+---
+
+## 47. Human-review tables need a source-health row
+
+### Objective
+Create an X post draft about adding a source-health summary above every AI-generated reply table so reviewers know whether the rows came from verified live X posts, a curated watchlist, public search fallback, or a blocked scan.
+
+### Target audience
+- GTM operators
+- social leads
+- founders using AI for engagement
+- AI workflow builders
+
+### Core angle
+The reply table format is useful, but it needs a source-health header. Without that context, a reviewer cannot tell whether they are approving live engagement options or looking at degraded fallback material.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw outputs:
+- scan source
+- source status
+- verified row count
+- skipped or blocked lanes
+- post URL and suggested reply only when the URL is verified
+
+### Useful details to include
+- why source-health belongs before the copy table
+- how this reduces review risk
+- how verified row counts make the workflow easier to trust
+- why blocked rows should become backlog, not production replies
+
+### Desired takeaway
+Human approval gets faster when the reviewer can see the health of the source layer before reading the replies.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more practical/operator version
+- short rationale focused on source-health summaries as a review accelerator
+
+---
+
 ## Notes for Social when pulling item 1
 - Pull the top item only.
 - Open a GitHub drafting issue for that item before developing it further.
