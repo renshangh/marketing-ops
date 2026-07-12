@@ -2377,6 +2377,47 @@ Include:
 
 ---
 
+## 56. Treat blocked live-feed access as part of the social ops workflow
+
+### Objective
+Create an X post draft about why social operators should design reply workflows that handle flaky or gated live feeds gracefully instead of pretending every scan will return clean data.
+
+### Target audience
+- growth operators
+- founder-led GTM teams
+- social leads using AI workflows
+- teams building agent-assisted marketing ops
+
+### Core angle
+Live social workflows depend on unstable surfaces. X can return gated shells, broken public pages, or partial API results. A useful operator workflow should detect that failure, preserve provenance, avoid hallucinated post URLs, and route the next step back to a human or authenticated browser session.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- attempts a lightweight X fetch first
+- records whether the scan returned real posts, a gated shell, or an API failure
+- refuses to fabricate post URLs when live data is unavailable
+- still produces safe fallback work, such as drafting reusable reply angles or adding backlog ideas
+- tells the operator exactly what input is needed to finish the live reply table
+
+### Useful details to include
+- why scan provenance matters in AI-assisted social ops
+- how failure states protect brand safety
+- why fallback work keeps the morning loop productive
+- how human review remains the production gate
+
+### Desired takeaway
+OpenClaw is valuable in marketing ops because it handles messy workflow reality, not just the happy path.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more operator-trust-heavy version
+- short rationale focused on feed reliability, provenance, and safe fallback behavior
+
+---
+
 ## Notes for Social when pulling item 1
 - Pull the top item only.
 - Open a GitHub drafting issue for that item before developing it further.
