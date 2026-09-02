@@ -4559,6 +4559,293 @@ Include:
 
 ---
 
+## 109. Source-ready watchlists for reliable morning X reply tables
+
+### Objective
+Create an X post draft about replacing vague daily "top 10 posts" requests with source-ready watchlists that have been authenticated, scoped, and checked before reply drafting begins.
+
+### Target audience
+- GTM operators
+- founder-led marketing teams
+- social leads
+- AI workflow builders
+
+### Core angle
+The bottleneck in AI-assisted reply ops is often source readiness, not copy generation. A workflow can only return useful post URL + reply text rows when it starts from a readable feed, saved list, saved search, or operator-approved source packet.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- checks whether the requested X source lane is readable before drafting replies
+- uses an approved watchlist, saved search, or authenticated feed instead of an ambiguous public "top posts" request
+- verifies each candidate row has a canonical `x.com/.../status/...` URL and visible post context
+- drafts short human-review replies only for verified rows
+- reports blocked, stale, or insufficient source lanes as setup tasks rather than filling the table with guesses
+
+### Useful details to include
+- why "top posts" needs a named source scope to be repeatable
+- how watchlists reduce daily source friction
+- why verified context protects brand safety in public replies
+- how blocked scans can still produce source-maintenance tasks and content ideas
+
+### Desired takeaway
+OpenClaw makes morning X engagement reliable when source setup is treated as part of the workflow, not as an invisible assumption.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more tactical operator version
+- short rationale connecting today's X 403, mirror challenge gates, guest API token failure, and source-ready watchlists
+
+---
+
+## 110. Verified source packets for reply-ready X tables
+
+### Objective
+Create an X post draft about using verified source packets when live X discovery is blocked, so operators can still get useful reply tables without pretending the agent saw a feed it could not access.
+
+### Target audience
+- GTM operators
+- founder-led marketing teams
+- social leads
+- AI workflow builders
+
+### Core angle
+The strongest reply workflow is not "generate 10 replies no matter what." It is "only draft from post URLs and visible context the operator can trust." When direct X, anonymous APIs, and public readers are blocked, a source packet gives the agent clean inputs and keeps the human-review loop honest.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- runs a source preflight across direct X, guest query APIs, public readers, and approved fallbacks
+- reports which lanes are blocked, gated, offline, or usable
+- accepts an operator-provided source packet with canonical `x.com/.../status/...` URLs and copied visible post text
+- drafts one short reply per verified row
+- returns a table with post URL, reply text, source note, and confidence instead of fabricating missing rows
+
+### Useful details to include
+- why a verified source packet is better than a fake "top 10" table
+- how source packets preserve speed while keeping human judgment in control
+- why reply text should be downstream of source verification
+- how repeated blocked scans can become a prompt to create approved watchlists or authenticated lanes
+
+### Desired takeaway
+OpenClaw makes X reply ops more trustworthy when it can fail closed on source discovery but still turn verified inputs into review-ready replies.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more tactical operator version
+- short rationale connecting today's direct X 403/logged-out shell, anonymous query auth block, offline/gated reader fallbacks, and verified source packets
+
+---
+
+## 111. Source-lane preflight before AI-assisted X replies
+
+### Objective
+Create an X post draft about running a source-lane preflight before asking an AI operator to produce X reply tables, so the team knows whether the feed, list, search, or fallback source is actually readable.
+
+### Target audience
+- GTM operators
+- founder-led marketing teams
+- social leads
+- AI workflow builders
+
+### Core angle
+Morning reply ops should start by checking source access, not by forcing the agent to fill a table. If direct X, public readers, and search fallbacks are blocked, the honest output is a source status report plus the next setup step.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- preflights direct X, approved watchlists, saved searches, public readers, and indexed search fallbacks
+- marks each lane as usable, gated, blocked, stale, or low-confidence
+- only drafts reply text from rows with canonical post URLs and visible post context
+- asks for a source packet or authenticated source lane when no lane passes
+- turns repeated source failures into durable setup tasks instead of fake reply rows
+
+### Useful details to include
+- why source verification should happen before copy generation
+- how a source-lane status report protects brand safety
+- why repeatable watchlists beat ambiguous "top 10 posts" prompts
+- how operators can still make progress when X discovery is blocked
+
+### Desired takeaway
+OpenClaw makes X reply workflows more reliable when it treats source access as part of the operating system, not as a hidden assumption behind the table.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more operator-heavy version
+- short rationale based on today's direct X 403, logged-out shell, blocked search results, offline Nitter, gated xcancel, and lack of an authenticated local scraper
+
+---
+
+## 112. Auth status as the first row in X reply operations
+
+### Objective
+Create an X post draft about making source authentication status visible before a marketing agent attempts daily X reply discovery.
+
+### Target audience
+- GTM operators
+- founder-led marketing teams
+- social leads
+- AI workflow builders
+
+### Core angle
+The daily reply workflow should not hide platform access behind a prompt. If the agent cannot read the authenticated timeline, search endpoint, list, or approved watchlist, the first output should be an auth/source status row, not invented reply copy.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- checks whether the X connector or CLI is installed
+- checks auth/app registration without exposing secrets
+- verifies whether the requested source lane can return current posts
+- reports blocked paths like direct `x.com` 403s, missing app registration, public-reader challenge pages, or non-X search results
+- only drafts the post URL + reply text table once the source lane is actually readable
+
+### Useful details to include
+- why auth status belongs in the operator view
+- how this prevents fake confidence in public reply workflows
+- why installing a connector is not enough if the app/user auth is missing
+- how a visible preflight makes setup work actionable
+
+### Desired takeaway
+OpenClaw makes AI-assisted social engagement safer when it exposes source readiness before copy generation.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more product-led version
+- short rationale based on today's installable `xurl` path, missing registered X apps, direct X 403, and blocked public-reader fallbacks
+
+---
+
+## 113. Fail-closed reply drafting for public brand safety
+
+### Objective
+Create an X post draft about why marketing agents should fail closed on reply drafting when they cannot verify the post URL and visible context.
+
+### Target audience
+- social operators
+- startup founders
+- growth teams
+- AI automation buyers
+
+### Core angle
+For public replies, the riskiest failure mode is not an empty table. It is a confident table built from stale, partial, or unverified source data. A brand-safe workflow should refuse to draft when source discovery cannot prove what it saw.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- attempts authenticated X first
+- records each fallback source and its result
+- rejects old indexed search hits as insufficient for a current "top 10 posts" request
+- asks for an approved source packet when no live source passes
+- turns the failure into a setup/backlog item so the operator still gets value
+
+### Useful details to include
+- why public replies have a higher verification bar than internal summaries
+- how stale indexed posts can create bad replies
+- why "no verified rows" is a useful operational result
+- how failure telemetry can become product and process improvement
+
+### Desired takeaway
+OpenClaw protects brand judgment by drafting replies only downstream of verified live source context.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more brand-safety-heavy version
+- short rationale based on today's inability to verify current top X posts through direct, authenticated, mirror, RSS, or search lanes
+
+---
+
+## 114. Authenticated source lanes for real-time X trend response
+
+### Objective
+Create an X post draft about why real-time X reply workflows need an authenticated, operator-approved source lane before an agent can produce a reliable post URL + reply text table.
+
+### Target audience
+- GTM operators
+- founder-led marketing teams
+- social leads
+- AI workflow builders
+
+### Core angle
+Real-time social workflows depend on readable source access. If X redirects to login, public readers are blocked, and the local client has no registered app, the right operator output is a source-readiness report plus a setup task, not fabricated "top post" rows.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- checks direct X, local X tooling, public trend pages, and approved fallbacks
+- separates trend discovery from verified post discovery
+- requires canonical `x.com/.../status/...` URLs and visible post text before drafting replies
+- returns a clear blocked-source status when no live post lane passes
+- turns the failure into a durable setup task for an authenticated feed, list, saved search, or source packet
+
+### Useful details to include
+- why trending topics are not a substitute for verified top posts
+- how source auth protects brand-safe public replies
+- why "login required" and "anonymous query blocked" should be visible operator states
+- how teams can keep moving by maintaining approved source packets or authenticated watchlists
+
+### Desired takeaway
+OpenClaw is strongest as a social ops layer when it treats source access as part of the workflow, then drafts replies only from verified, reviewable posts.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more operator/process-heavy version
+- short rationale based on today's X login redirect, `xurl` missing app registration, blocked anonymous readers, and low-context trend-page fallback
+
+---
+
+## 115. Verified reply tables need source contracts, not heroic scraping
+
+### Objective
+Create an X post draft about turning repeated "top 10 posts + reply text" requests into a reliable source contract with explicit inputs, auth state, and fallback behavior.
+
+### Target audience
+- GTM operators
+- founder-led marketing teams
+- social leads
+- AI workflow builders
+
+### Core angle
+The hard part of daily reply ops is not writing ten decent replies. It is proving the agent actually saw ten current posts from the intended source. A source contract makes the workflow repeatable by defining what counts as a valid input before copy generation starts.
+
+### OpenClaw-specific example
+Show a workflow where OpenClaw:
+- checks the requested X source lane before drafting
+- records whether direct X, local X tooling, public readers, guest-token APIs, or approved source packets returned usable rows
+- requires each row to include a canonical `x.com/.../status/...` URL plus visible post text
+- drafts replies only after source verification passes
+- gives the operator a blocked-source status and setup action when the lane fails
+
+### Useful details to include
+- why current post verification matters for public brand replies
+- why "top 10 posts" should name a feed, list, saved search, or source packet
+- how auth/source state should be visible in the operator output
+- how a failed scan can still improve the system by producing the next setup task
+
+### Desired takeaway
+OpenClaw makes social engagement safer and more repeatable when reply tables are downstream of a clear source contract.
+
+### Draft packet requirements
+Include:
+- 1 main X post draft
+- 2 alternate hooks
+- 1 concise version
+- 1 more practical operator version
+- short rationale based on today's public X shell, missing `xurl` app registration, Jina auth block, guest-token dead end, and lack of verified post URLs
+
+---
+
 ## Notes for Social when pulling item 1
 - Pull the top item only.
 - Open a GitHub drafting issue for that item before developing it further.
